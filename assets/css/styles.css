@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E1E;
+}
+
+.container {
+    margin: 0 auto; /* inline 18vh */
+    padding-top: 20px;
+    max-width: 1200px;
+}
+
+.navbar {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.navbar-brand img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* HEADER */
+.header-menu {
+    min-height: 100vh;
+}
+
+.header-menu a {
+    color: #FFFFFF;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FD6F00;
+    border-bottom: 2px solid #FD6F00;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #FD6F00;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #E46400;
+    color: #FFFFFF;
+}
+
+/*SECTION HOME*/
+.circle {
+    border-radius: 100%;
+    padding: 6px;
+    background-image: linear-gradient(to bottom, rgba(255, 165, 0, 0), rgba(253, 111, 0, 1));
+    max-width: 100%;
+}
+
+.circle img {
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-media-buttons .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    margin: 0 -100px;
+    margin-right: 108px;
+   
+}
+
+.btn-social:hover{
+    border-radius: 100%;
+    background: #FFFFFF;
+    color: #FD6F00;
+}
+
+.intro {
+    text-align: left;
+
+    .intro-name {
+        color: #FD6F00;
+    }
+}
+
+
+.job-title {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0;
+    max-width: 569px;
+    text-align: left;
+
+    .text-right {
+        text-align: right;
+    }
+    .dot {
+        color:#FD6F00;
+    }
+}
+
+.description {
+    line-height: 1.8;
+    max-width: 569px;
+    padding-top: 24px;
+    text-align: justify; 
+}
+
+.skills {
+    list-style: none;
+    width: 100%;
+    margin-left: 4px;
+    max-width: 594px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.skills h1 {
+    font-weight: 600;
+}
+
+.skills p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.skill {
+    margin: 24px 0;
+    padding: 2px;
+    padding-top: 6px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.skill-per {
+    height: 10px;
+    background: #FD6F00;
+    border-radius: 10px;
+    position: relative;
+    animation: fillBars 3s 1;
+}
+
+ .skill-per::before {
+    content: attr(per);
+    border-radius: 100%;
+    position: absolute;
+    padding: 10px 10px;
+    background: #ffffff;
+    border: 2px solid #FD6F00;
+    top: -8px;
+    right: 0;
+    transform: translate(50%);
+}
+
+@keyframes fillBars {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .container {
+        margin-inline: 8%;
+    }
+
+    .container-main {
+        margin-right: 14%;
+        margin-top: -20px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        background-color: #FFFFFF;
+        color: #FD6F00;
+    }  
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+      
+    .navbar-nav .nav-item {
+        margin: 8px;
+    }
+      
+    .navbar-nav .nav-item .btn {
+        margin-left: 0 !important;
+    }
+
+    .header-menu {
+        padding-bottom: 8px;
+    }
+
+    .intro {
+        text-align: left;
+    }
+
+    .job-title {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .description, .skills {
+        text-align: justify;
+    }
+
+    .abtme {
+        padding-top: 24px;
+        text-align: center;
+    }
+
+    .circle {
+        padding: 4px;
+    }
+
+    .image-container {
+        justify-content: center !important;
+        padding-top: 32px;
+    }
+
+    .social-media-buttons .btn-social {
+        font-size: 2.0rem;
+        margin: 0px 2px;
+        margin-right: 18px;
+    }
+
+    .skills {
+        margin-bottom: -32px;
+    }
+
+    .job-title {
+        font-size: 50px;
+    }
+
+    .intro .intro-title,
+    .intro .intro-name {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 18px;
+        padding-top: 22px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        /* margin-bottom: 20px; */
+    }
+
+    .home .intro {
+        order: 1; 
+    }
+
+    .aboutme .image-container {
+        order: 2; 
+    }
+    
+}
