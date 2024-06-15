@@ -230,6 +230,22 @@ body {
         color: #FD6F00;
     }  
 
+    .navbar-toggler.active .bi-x {
+        display: inline-block;
+    }
+
+    .navbar-toggler .bi-x {
+        display: none; 
+    }
+
+    .navbar-toggler .bi-justify {
+        display: inline-block;
+    }
+
+    .navbar-toggler.active .bi-justify {
+        display: none;
+    }
+
     .navbar-nav {
         display: flex;
         justify-content: center;
