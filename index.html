@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerson Lima</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <header class="header-menu">
+    <header class="header-menu" id="home">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
               <div class="d-flex align-items-center">
@@ -50,7 +52,7 @@
             </div>
         </nav>
 
-        <section class="home d-flex align-items-center" id="home">
+        <section class="home d-flex align-items-center">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12">
@@ -63,7 +65,7 @@
                             <p class="job-title text-white">UI & UX</p>
                             <p class="job-title text-right text-white">Designer<span class="dot">.</span></p>
                         </div>
-                        <p class="description text-white">I build intuitive interfaces and impactful experiences. Passionate about transforming ideas into digital reality. Focused on creating solutions that delight and inspire.</p>
+                        <p class="description">I build intuitive interfaces and impactful experiences. Passionate about transforming ideas into digital reality. Focused on creating solutions that delight and inspire.</p>
                         <a href="https://wa.me/+5584996443361" target="_blank">
                           <button class="btn px-4">Hire me</button>
                         </a>
@@ -85,10 +87,10 @@
     </header>
     
     <main class="container-main">
-      <section class="aboutme" id="aboutme">
+      <section class="aboutme pb-5" id="aboutme">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <div class="image-container col-xl-6 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-start">
+            <div class="image-container col-xl-6 col-lg-4 col-md-12 col-sm-12 mt-5 d-flex justify-content-start">
               <div class="circle">
                 <img src="./assets/img/memoji2.png" class="img-fluid" alt="Illustration2">
               </div>
@@ -96,8 +98,8 @@
 
             <div class="skills col-xl-6 col-lg-8 col-md-12 col-sm-12">
 
-              <h1 class="abtme">About me</h1>
-              <p>IT student and passionate about technology. I have knowledge in iOS development (Swift, SwiftUI) and web as front-end (HTML, CSS, JS). I have 2 years of professional experience as UX/UI Design. I have previous experience in other languages ​​such as Python, C, Java and PHP. I look for new challenges to develop my professional career.</p>
+              <h1 class="abtme pt-5">About me</h1>
+              <p class="abtme-desc">IT student and passionate about technology. I have knowledge in iOS development (Swift, SwiftUI) and web as front-end (HTML, CSS, JS). I have 2 years of professional experience as UX/UI Design. I have previous experience in other languages ​​such as Python, C, Java and PHP. I look for new challenges to develop my professional career.</p>
 
               <div class="skill">
                 <div class="skill-name">User Experience Design</div>
@@ -116,7 +118,7 @@
               <div class="skill">
                 <div class="skill-name">Front-End Development</div>
                 <div class="skill-bar">
-                    <div class="skill-per" style="max-width:68%"></div>
+                    <div class="skill-per" style="max-width:88%"></div>
                 </div>
               </div>
 
@@ -128,6 +130,46 @@
               </div>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services mb-5 pb-5" id="services"">
+        <div class="container">
+          <h1 class="text-center pt-4">Services</h1>
+          <p class="srvc-desc d-flex mx-auto text-center w-50 mb-5">I transform ideas into digital reality with intuitive design and responsive development, ensuring excellence in each project.</p>
+          <div class="row">
+
+            <div class="col-xl-4 cards">
+              <div class="card">
+                <img src="./assets/img/card1.png" class="card-img" style="width: 88px;" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">UX/UI Design</h5>
+                  <p class="card-text mb-4 mt-3">I develop intuitive and aesthetically appealing user interfaces, focused on improving the user experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 cards">
+              <div class="card">
+                <img src="./assets/img/card2.png" class="card-img" style="width: 81px;" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Web Pages Development</h5>
+                  <p class="card-text mb-4 mt-3">I build modern and responsive websites and landing pages, focused on performance, design and accessibility.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 cards">
+              <div class="card">
+                <img src="./assets/img/card3.png" class="card-img" style="width: 52px;" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Mobile App Development</h5>
+                  <p class="card-text mb-4 mt-3">I develop mobile applications for iOS, natively, with intuitive, attractive and high performance interfaces.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
