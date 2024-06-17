@@ -11,18 +11,28 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1E1E1E;
+    padding-top: 110px;
 }
 
 .container {
-    margin: 0 auto; /* inline 18vh */
+    margin: 0 auto;
     padding-top: 20px;
     max-width: 1200px;
 }
 
 .navbar {
     width: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+    position:fixed;
+    top: 0;
+    transition: top 0.3s;
+    background-color: rgba(30, 30, 30, 0.98);
+    z-index: 1000;
 }
+
+.home:target {
+    scroll-margin-top: 110px;
+}   
 
 .navbar-brand img {
     max-width: 60%;
@@ -30,9 +40,9 @@ body {
 }
 
 /* HEADER */
-.header-menu {
-    min-height: 100vh;
-}
+/* .header-menu {
+    margin-bottom: 60px;
+} */
 
 .header-menu a {
     color: #FFFFFF;
@@ -394,11 +404,8 @@ body {
         margin-left: 36px;
     }
 
-
-    
-
-
-      
-    
-    
+    #services {
+        padding-top: 80px; 
+    }
+ 
 }
