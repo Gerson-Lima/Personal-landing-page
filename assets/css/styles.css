@@ -355,7 +355,6 @@ body {
     .btn {
         width: 100%;
         text-align: center;
-        /* margin-bottom: 20px; */
     }
 
     .home .intro {
@@ -365,5 +364,41 @@ body {
     .aboutme .image-container {
         order: 2; 
     }
+
+    .srvc-desc {
+        text-align: justify !important;
+    }
+
+    .card {
+        max-width: 100% !important;
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .container .card-title {
+        color: #1E1E1E;
+        margin: 0px 6px;
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .card-img {
+        width: 68px !important;
+        margin-top: 48px;
+        margin-left: 28px;
+    }
+
+    #special-card-img .card-img {
+        width: 48px !important;
+        margin-left: 36px;
+    }
+
+
+    
+
+
+      
+    
     
 }
