@@ -405,7 +405,11 @@ body {
     }
 
     #services {
-        padding-top: 80px; 
+        padding-top: 32px; 
     }
+
+    #services:target {
+        scroll-margin-top: 40px;
+    }   
  
 }
