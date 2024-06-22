@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1E1E1E;
+    background-color: #222831;
     padding-top: 110px;
 }
 
@@ -26,7 +26,7 @@ body {
     position:fixed;
     top: 0;
     transition: top 0.3s;
-    background-color: rgba(30, 30, 30, 0.98);
+    background-color: rgba(34, 40, 49, 0.96);
     z-index: 1000;
 }
 
@@ -40,9 +40,6 @@ body {
 }
 
 /* HEADER */
-/* .header-menu {
-    margin-bottom: 60px;
-} */
 
 .header-menu a {
     color: #FFFFFF;
@@ -55,8 +52,8 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #FD6F00;
-    border-bottom: 2px solid #FD6F00;
+    color: #00ADB5;
+    border-bottom: 2px solid #00ADB5;
 }
 
 .navbar-nav .nav-item {
@@ -64,34 +61,27 @@ body {
 }
 
 .btn {
-    background-color: #FD6F00;
+    background-color: #00ADB5;
     color: #FFFFFF;
 }
 
 .btn:hover {
-    background-color: #E46400;
+    background-color: #077b81;
     color: #FFFFFF;
 }
 
 /*SECTION HOME*/
 
 .circle {
-    border-radius: 100%;
-    padding: 6px;
-    background-image: linear-gradient(to bottom, rgba(255, 165, 0, 0), rgba(253, 111, 0, 1));
-    max-width: 100%;
     transition: transform 0.6s ease;
 }
-
 .circle:hover {
     transform: scale(1.02);
     transition: transform 0.6s ease;
 }
 
 .circle img {
-    border-radius: 100%;
-    background-color: #FFFFFF;
-    max-width: 100%;
+    width: 480px;
     height: auto;
 }
 
@@ -104,22 +94,21 @@ body {
     background-color: transparent;
     border: none;
     margin: 0 -100px;
-    margin-right: 108px;
-   
+    margin-right: 106px;
 }
 
 .btn-social:hover{
     border-radius: 100%;
     background: #FFFFFF;
-    color: #FD6F00;
+    color: #00ADB5;
 }
 
 .intro {
     text-align: left;
+}
 
-    .intro-name {
-        color: #FD6F00;
-    }
+.intro-name, .clr {
+    color: #00ADB5;
 }
 
 .job-title {
@@ -132,9 +121,6 @@ body {
 
     .text-right {
         text-align: right;
-    }
-    .dot {
-        color:#FD6F00;
     }
 }
 
@@ -153,7 +139,8 @@ body {
     margin-left: 4px;
     max-width: 594px;
     color: #FFFFFF;
-    padding: 10px;
+    padding-top: 20px;
+    
 }
 
 .container h1 {
@@ -168,9 +155,9 @@ body {
 }
 
 .skill {
-    margin: 24px 0;
+    margin: 18px 0;
     padding: 2px;
-    padding-top: 6px;
+    padding-top: 20px;
 }
 
 .skill-bar {
@@ -179,9 +166,18 @@ body {
     border-radius: 10px;
 }
 
+@keyframes fillBars {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 .skill-per {
     height: 10px;
-    background: #FD6F00;
+    background: #00ADB5;
     border-radius: 10px;
     position: relative;
     animation: fillBars 3s 1;
@@ -193,23 +189,28 @@ body {
     position: absolute;
     padding: 10px 10px;
     background: #ffffff;
-    border: 2px solid #FD6F00;
+    border: 2px solid #00ADB5;
     top: -8px;
     right: 0;
     transform: translate(50%);
 }
 
 .skill-per:hover {
-    box-shadow: 0 0 14px rgb(255, 111, 1);
+    box-shadow: 0 0 14px rgb(0, 173, 181);
     
 }
 
 /* SERVICES */
+.services {
+    padding-top: 26px;
+}
+
 .card {
     margin-top: -6px;
     justify-content: center;
     border-radius: 16px;
     transition: transform 0.6s ease;
+    background-color: #2D333B;
 }
 
 .card:hover {
@@ -223,27 +224,42 @@ body {
 }
 
 .container .card .card-text {
-    color: #1E1E1E;
+    color: #FFFFFF;
     text-align: justify;
     margin: 0px 6px;
+    line-height: 1.6;
 }
 
 .container .card-title {
-    color: #1E1E1E;
+    color: #FFFFFF;
     margin: 0px 6px;
     margin-top: 40px;
     font-weight: 600;
     font-size: 24px;
 }
 
-@keyframes fillBars {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
+/* PROJECTS */
+.filter-btn {
+    border-radius: 24px;
+    background-color: #2D333B;
+    color: #EEEEEE;
+    border: none;
+    padding: 10px 32px;
+    font-weight: 600;
+    text-shadow: 0 4px 4px #16191d9b;
+    margin-top: 26px;
 }
+
+.filter-btn:hover {
+    background-color: #00ADB5;
+}
+
+.card-img-top {
+    padding: 16px;
+    border-radius: 24px;
+}
+
+
 
 
 
@@ -281,8 +297,9 @@ body {
 
     .navbar-toggler {
         margin-left: auto;
-        background-color: #FFFFFF;
-        color: #FD6F00;
+        background-color: #2D333B;
+        border:solid #00ADB5;
+        color: #00ADB5;
     }  
 
     .navbar-toggler.active .bi-x {
@@ -317,7 +334,7 @@ body {
     }
 
     .header-menu {
-        padding-bottom: 8px;
+        padding-bottom: 2px;
     }
 
     .intro {
@@ -341,11 +358,12 @@ body {
     .social-media-buttons .btn-social {
         font-size: 2.0rem;
         margin: 0px 2px;
-        margin-right: 18px;
+        margin-right: 6px;
     }
 
     .skills {
-        margin-bottom: -32px;
+        margin-bottom: -62px !important;
+        margin-top: -20px;
     }
 
     .job-title {
@@ -386,7 +404,7 @@ body {
     }
 
     .container .card-title {
-        color: #1E1E1E;
+        color: #FFFFFF;
         margin: 0px 6px;
         margin-top: 12px;
         font-weight: 600;
@@ -405,11 +423,21 @@ body {
     }
 
     #services {
-        padding-top: 32px; 
+        padding-top: 10px; 
     }
 
     #services:target {
         scroll-margin-top: 40px;
     }   
- 
+
+    .filter-btn-group {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+
 }
