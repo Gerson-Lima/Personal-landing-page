@@ -486,6 +486,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: -40px;
     }
 
     .navbar-nav-footer .nav-item {
@@ -495,7 +496,6 @@ body {
     .navbar-nav-footer {
         list-style-type: none ;
         display: flex;
-        /* flex-direction: column; */
         font-size: 0px;
     }
 
