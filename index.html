@@ -167,7 +167,7 @@
                 <img src="./assets/img/card3.png" class="card-img" style="width: 55px;" alt="Work 3">
                 <div class="card-body">
                   <h5 class="card-title">Mobile App Development</h5>
-                  <p class="card-text mb-4 mt-3">I develop native mobile applications for iOS, with intuitive, attractive and high-performance interfaces, optimized to offer a fluid and efficient experience to users.</p>
+                  <p class="card-text mb-4 mt-3">I develop native mobile applications for iOS, with intuitive, simple-to-use, interactive and high-performance interfaces, optimized to offer a fluid and efficient experience to users.</p>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@
           <h1 class="text-left pt-4">Some of my <span class="clr">projects</span></h1>
 
           <div class="filter-btn-group mb-5">
-            <button class="filter-btn me-2" data-filter="all">All</button>
+            <button class="filter-btn me-2 active" data-filter="all">All</button>
 
             <button class="filter-btn me-2" data-filter="uiux">UI/UX</button>
 
@@ -193,7 +193,7 @@
           </div>
           <div class="row">
 
-            <div class="col-xl-3 pt-1 cards">
+            <div class="col-xl-3 pt-1 cards-work web">
               <div class="card">
                 <img src="./assets/img/Thumbnail_web.png" class="card-img-top" alt="Project 1">
                 <div class="card-body">
@@ -204,7 +204,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3 pt-1 cards">
+            <div class="col-xl-3 pt-1 cards-work mobile">
               <div class="card">
                 <img src="./assets/img/Thumbnail_mobile1.png" class="card-img-top" alt="Project 2">
                 <div class="card-body">
@@ -215,7 +215,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3 pt-1 cards">
+            <div class="col-xl-3 pt-1 cards-work mobile">
               <div class="card">
                 <img src="./assets/img/Thumbnail_mobile2.png" class="card-img-top" alt="Project 3">
                 <div class="card-body">
@@ -226,9 +226,9 @@
               </div>
             </div>
 
-            <div class="col-xl-3 pt-1 cards">
+            <div class="col-xl-3 pt-1 cards-work uiux">
               <div class="card">
-                <img src="./assets/img/Thumbnail_UIUX.png" class="card-img-top" alt="Project 4">
+                <img src="./assets/img/Thumbnail_uiux.png" class="card-img-top" alt="Project 4">
                 <div class="card-body">
                   <h5 class="card-title-work">Desconation</h5>
                   <p class="card-text-work">Prototype made from the proposal of searching and sharing promotions and discounts. Allows users to find ways to save.</p>
@@ -236,14 +236,60 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer" id="contact">
+      <div class="container mb-3">
+        
+        <h1 class="text-center mt-5 ">Talk to <span class="clr">me!</span></h1>
+        <p class="srvc-desc d-50 mx-auto text-center mb-5">Want to contact me by email? Enter your email address below. Or if you prefer, try the contact links in the footer or home.</p>
+        
+        <div class="email">
+          <input class="email-field" type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button class="btn" onclick="sendEmail()">Contact me</button>
+        </div>
+
+        <div class="final-info-logo mt-5 pt-5">
+          <img src="./assets/img/logo.svg" width="200px" alt="Logo">
+        </div>
+        
+          <ul class="navbar-nav-footer m-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="social-media-buttons-footer d-flex justify-content-center mt-3">
+            <a href="https://wa.me/+5584996443361" class="btn btn-outline-light btn-social btn-social-lg" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/gersondlima/" class="btn btn-outline-light btn-social btn-social-lg" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gersonlima1/" class="btn btn-outline-light btn-social btn-social-lg" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" class="btn btn-outline-light btn-social btn-social-lg" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 mt-5 cr-footer">
+              <span class="text-white mx-auto inc-text">&copy; 2024 <span class="clr"><b>Gerson Lima</b></span> All Rights Reserved.</span>
+            </div>
+          </div>
+      </div>
+
+     
+
 
     </footer>
 
