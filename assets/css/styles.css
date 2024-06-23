@@ -481,5 +481,22 @@ body {
         text-align: center;
     }
 
+    .footer {
+        margin: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav-footer .nav-item {
+        margin-left: 0px;
+    }
+
+    .navbar-nav-footer {
+        list-style-type: none ;
+        display: flex;
+        /* flex-direction: column; */
+        font-size: 0px;
+    }
 
 }
