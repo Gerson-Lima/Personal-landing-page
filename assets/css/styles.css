@@ -481,22 +481,29 @@ body {
         text-align: center;
     }
 
-    .footer {
-        margin: 0px 40px;
+    .footer, .email {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -40px;
     }
 
-    .navbar-nav-footer .nav-item {
-        margin-left: 0px;
+    .email-field {
+        border-radius: 5px; 
+        width: 210px;
+        height: 38px;
+        border: none;
+        padding-left: 16px;
+        margin-right: 20px;
     }
 
     .navbar-nav-footer {
         list-style-type: none ;
         display: flex;
         font-size: 0px;
+    }
+
+    .navbar-nav-footer .nav-item {
+        margin-left: 0px;
     }
 
 }
