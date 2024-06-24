@@ -321,7 +321,7 @@ body {
 
 
 
-/* Responsividade */
+/* Responsive mode */
 @media (max-width: 1200px) {
     .container {
         margin-inline: 8%;
@@ -481,7 +481,7 @@ body {
         text-align: center;
     }
 
-    .footer, .email {
+    .footer, .email, .email-field {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -499,11 +499,11 @@ body {
     .navbar-nav-footer {
         list-style-type: none ;
         display: flex;
-        font-size: 0px;
+        font-size: 0;
     }
 
     .navbar-nav-footer .nav-item {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
 }
